@@ -1,0 +1,172 @@
+/* General layout */
+
+a{
+    text-decoration: none;
+    color: #333;
+}
+.quantity input{
+    width: 50px;
+    padding: 5px 10px;
+}
+.cart-body {
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 20px 0 80px 0;
+}
+.cart1 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    gap: 20px;
+}
+
+.cart1 .cart1-table {
+    width: 70%; /* Bảng giỏ hàng chiếm 70% */
+    border-collapse: collapse;
+}
+.checkout{
+    width: 28%; /* Box tổng tiền chiếm 28% */
+    background-color: #eeeeee;
+    padding: 10px 20px;
+    font-size: 16x;
+    height: 180px;
+}
+.cart1 .cart1-summary {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f8f8f8;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.tong{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.tong span{
+    color: #d32f2f;
+    font-weight: bold;
+    font-size: 18px;
+}
+.checkout button{
+    font-size: 16px;
+    margin-top: 10px;
+    width: 100%;
+    height: 50px;
+    border-radius: 3px;
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+}
+
+
+.cart1-summary p {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+.cart1-summary .checkout-button {
+    width: 100%;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+/* Table styles */
+.cart1-table th,
+.cart1-table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+}
+.price del{
+    font-size: 14px;
+    color: gray;
+}
+
+.cart1-table th {
+    background-color: #f8f8f8;
+    font-weight: bold;
+}
+
+.cart1-table td {
+    background-color: #fff;
+}
+
+/* Product image styles */
+.product-img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* Price, quantity, and total styles */
+.price, .total {
+    font-weight: bold;
+    color: #333;
+}
+
+.quantity button {
+    width: 80px;
+    height: 30px;
+    background-color: #333;
+    cursor: pointer;
+    font-size: 14px;
+    color: #333;
+    border: none;
+    color: #fff;
+}
+
+.quantity button:hover {
+    background-color: #ddd;
+}
+
+.quantity span {
+    margin: 0 10px;
+    font-size: 18px;
+}
+
+/* Remove button style */
+.remove-btn {
+    background-color: #fff;
+    color: #f44336;
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+}
+.cart1 p{
+    margin: 0;
+    padding: 0;
+}
+.remove-btn:hover {
+    background-color: #d32f2f;
+    color: white;
+}
+
+/* Responsive layout */
+@media screen and (max-width: 768px) {
+    .cart1 {
+        flex-direction: column;
+    }
+
+    .cart1 .cart1-table,
+    .cart1 .cart1-summary {
+        width: 100%;
+    }
+
+    .product-img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .quantity button {
+        width: 25px;
+        height: 25px;
+    }
+
+    .checkout-button {
+        font-size: 14px;
+    }
+}
